@@ -1,13 +1,21 @@
 const fs = require('fs');
 
+var heroes = fs.readFileSync('science.json', "utf8");
+heroes = JSON.parse(heroes);
+
 
 const heroesController = {
     index: function(req, res){
-        let heroes = fs.readFileSync('science.json', "utf8");
-        heroes = JSON.parse(heroes);
         res.send(heroes);
-    }
+    },
 
+
+    show: function(req, res){
+        
+    }
 }
 
+
+
 module.exports = heroesController;
+
