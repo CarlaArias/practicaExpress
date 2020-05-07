@@ -4,4 +4,5 @@ const homeController = {
     }
 } 
 
+
 module.exports = homeController;                                                        // Se exporta el objeto homeController
