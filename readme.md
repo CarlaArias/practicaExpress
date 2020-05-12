@@ -4,7 +4,9 @@ El sitio mostrará la información de personalidades representativos de las cien
 
 ## Introducción
 
-Con ayuda del framework Express, la aplicación podrá montar un webserver localmente y así, simular las interacciones cliente-servidor. 
+Con ayuda del framework Express, la aplicación podrá montar un webserver localmente y así, simular las interacciones cliente-servidor.
+En la carpeta routes, se guarda un archivo js por cada recurso el cual estará encargado de administrar los requests a las rutas que tengan que ver con dicho recurso.
+En controllers, se guarda, de igual manera, un archivo js por cada recurso con el objeto de atender los requests del cliente. Serán los  métodos de cada controlador los que recibirán los datos de los requests y enviaraán la información correspondiente
 
 
 ## Objetivo

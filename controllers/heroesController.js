@@ -1,12 +1,12 @@
 const fs = require('fs');
 
-var science = fs.readFileSync('science.json', "utf8");
+var science = fs.readFileSync('data/science.json', "utf8");
 science = JSON.parse(science);
 
 
 const heroesController = {
     index: function(req, res){
-        res.send(science);
+        res.send(science);                                                                                                                // Muestra toda la información del archivo json
     },
 
 
@@ -16,7 +16,7 @@ const heroesController = {
         });
 
         if (arrayConObjetoCorrecto[0] != undefined){
-            res.send("Hola, mi nombre es " + arrayConObjetoCorrecto[0].nombre + " y soy " + arrayConObjetoCorrecto[0].profesion);
+            res.send("Hola, mi nombre es " + arrayConObjetoCorrecto[0].nombre + " y soy " + arrayConObjetoCorrecto[0].profesion);         // Muestra una presentación del personaje elegido
         }else{
             res.send("​No encontramos al científico indicado. Por favor, elija otro id​");
         }
@@ -28,7 +28,7 @@ const heroesController = {
         });
 
         if (arrayConObjetoCorrecto[0] != undefined && req.params.ok == 'ok'){
-            res.send(arrayConObjetoCorrecto[0].nombre + ": " + arrayConObjetoCorrecto[0].resenia);
+            res.send(arrayConObjetoCorrecto[0].nombre + ": " + arrayConObjetoCorrecto[0].resenia);                                        // Muestra una breve reseña del personaje elegido
         }
         if(arrayConObjetoCorrecto[0] != undefined && (req.params.ok != 'ok' || req.params.ok == undefined)){
             res.send(arrayConObjetoCorrecto[0].nombre + "​: Lamento que no desees saber más de mi :(");
@@ -42,5 +42,5 @@ const heroesController = {
 }
 
 
-module.exports = heroesController;
+module.exports = heroesController;                                                                                                         // Se exporta el objeto heroesController                                                      
 

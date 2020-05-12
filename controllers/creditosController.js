@@ -5,4 +5,4 @@ const creditosController = {
 }
 
 
-module.exports = creditosController;
+module.exports = creditosController;                                            // Se exporta el objeto homeController
