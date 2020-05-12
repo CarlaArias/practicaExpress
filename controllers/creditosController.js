@@ -1,6 +1,6 @@
 const creditosController = {
     index: function(req, res){
-        res.send("Carli Arias, Martin Dvorkin, Ani Rubado");
+        res.send("Somos Carli Arias, Martín Dvorkin y Ani Rubado.\n¡Gracias por ingresar a la página!");
     }
 }
 
