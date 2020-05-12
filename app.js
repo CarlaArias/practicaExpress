@@ -3,7 +3,7 @@ const app = express();                                      // La ejecución de 
 
 const homeRoutes = require("./routes/home");                // Se hace uso del objeto router de home.js 
 const heroesRoutes = require("./routes/heroes");
-const contactoRoutes = require("./routes/contacto");
+const creditosRoutes = require("./routes/creditos");
 
 app.listen(3030, () => console.log("Running on 3030"));
 
@@ -11,4 +11,4 @@ app.listen(3030, () => console.log("Running on 3030"));
 
 app.use("/", homeRoutes)                                    // Se relaciona la ruta con las funcionalidades pertinentes
 app.use("/heroes", heroesRoutes);
-app.use("/contacto", contactoRoutes);
+app.use("/creditos", creditosRoutes);

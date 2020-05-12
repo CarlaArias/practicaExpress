@@ -1,8 +1,8 @@
-const contactoController = {
+const creditosController = {
     index: function(req, res){
         res.send("Carli Arias, Martin Dvorkin, Ani Rubado");
     }
 }
 
 
-module.exports = contactoController;
+module.exports = creditosController;
