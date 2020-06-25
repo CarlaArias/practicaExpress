@@ -8,8 +8,8 @@ Por su productividad, escalabilidad y velocidad, Express es uno de los framework
 
  * `/` -> Muestra un texto de bienvenida al sitio
  * `/heroes` -> Muestra el contenido del archivo science.json que contiene toda la información de las personalidades
- * `/heroes/detalle/id` -> Muestra la presentación de una personalidad según su número de id tomando los datos del archivo json
- * `/heroes/bio/id/ok` -> Muestra una reseña de la personalidad al ingresar un número de id existente
+ * `/heroes/detalle/:id` -> Muestra la presentación de una personalidad según su número de id tomado del archivo json
+ * `/heroes/bio/:id/:ok?` -> Muestra una reseña de la personalidad al ingresar un número de id existente y el parámetro optativo 'ok'
  * `/creditos`-> Muestra los nombres de los integrantes
 
 ## Arquitectura de archivos 
