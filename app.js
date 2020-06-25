@@ -9,6 +9,6 @@ app.listen(3030, () => console.log("Running on 3030"));     // Se levanta el ser
 
 
 
-app.use("/", homeRoutes)                                    // Se relaciona la solicitud del recurso con las rutasadd pertinentes
+app.use("/", homeRoutes)                                    // Se relaciona la solicitud del recurso con las rutas pertinentes
 app.use("/heroes", heroesRoutes);
 app.use("/creditos", creditosRoutes);
